@@ -8,6 +8,7 @@ export default createGlobalStyle<{ theme: any }>`
     height: 100%;
     width: 100%;
     color: ${props => props.theme.colors.black};
+    font-family: 'Open Sans', sans-serif;
   }
 
   body {
@@ -50,12 +51,19 @@ export default createGlobalStyle<{ theme: any }>`
     font-weight: normal;
     padding: 1rem 2rem 2rem 2rem;
   }
+
   label {
     font-size: 2rem;
   }
+
   span {
     font-size: 4rem;
   }
+
+  .colorChangeDiv {
+    margin: 2rem;
+  }
+
   h1 {
     font-size: 2rem;
     @media ${props => props.theme.device.tablet} {
